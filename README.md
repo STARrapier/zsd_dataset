@@ -14,7 +14,7 @@ This repository contains the datasets used in [Zero Shot Detection](https://arxi
 We propose a new Zero-Shot Detection (ZSD) problem, referring to the task of detecting classes with zero training data.
 
 <p align="center">
-![alt text][ZSD]
+![alt](ZSD)
 </p>
 
 To solve the ZSD problem, we propose a novel zero-shot method based on training an end-to-end model that fuses semantic attribute prediction with visual features to propose object bounding boxes for seen and unseen classes. Our method retains the efficiency and effectiveness of [YOLO](https://pjreddie.com/darknet/yolo/) for objects seen during training, while improving its performance for novel and unseen objects.
