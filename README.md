@@ -10,6 +10,17 @@ This repository contains the datasets used in [Zero Shot Detection](https://arxi
 }
 ```
 
+## Zero Shot Detection
+We propose a new Zero-Shot Detection (ZSD) problem, referring to the task of detecting classes with zero training data.
+
+<p align="center">
+![alt text][ZSD]
+</p>
+
+To solve the ZSD problem, we propose a novel zero-shot method based on training an end-to-end model that fuses semantic attribute prediction with visual features to propose object bounding boxes for seen and unseen classes. Our method retains the efficiency and effectiveness of [YOLO](https://pjreddie.com/darknet/yolo/) for objects seen during training, while improving its performance for novel and unseen objects.
+
+![alt text][ZSYOLO]
+
 
 ## Seen/Unseen Split
 
@@ -53,3 +64,5 @@ python zsd_split.py --dataset voc --data_dir $zsd-data-dir --name_file voc.names
 bash get_coco_zsd_dataset.sh $zsd-data-dir  # $zsd-data-dir: directory for saving coco ZSD dataset
 ```
 
+[ZSD]: ./mdsrc/ZSD.png "zero shot detection"
+[ZSYOLO]: ./mdsrc/ZSYOLO.png "zero shot YOLO"
